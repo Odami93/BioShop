@@ -1,0 +1,240 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #27ae60;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #27ae60;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Encabezado */
+header {
+    background: #27ae60;
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    text-decoration: underline;
+}
+
+/* Sección principal */
+main {
+    margin-top: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #e9f7ef;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #27ae60;
+    color: white;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.hero a:hover {
+    background: #1e8449;
+}
+
+/* Productos y Tiendas */
+.product-grid, .store-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.product-item, .store-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Asegura que el contenido no se desborde fuera del contenedor */
+}
+
+.product-item img, .store-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.product-item h3, .store-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #27ae60;
+}
+
+.product-item p, .store-item p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.product-item .details-link, .store-item .details-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #27ae60;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.product-item .details-link:hover, .store-item .details-link:hover {
+    background-color: #1e8449;
+}
+
+/* Detalles de la tienda */
+.store-item .store-details a {
+    word-wrap: break-word; /* Romper la URL si es demasiado larga */
+    overflow-wrap: break-word; /* Alternativa, compatible con más navegadores */
+    word-break: break-word; /* Rompe la palabra en cualquier lugar si es necesario */
+    max-width: 100%; /* Asegurarse de que el enlace no se desborde */
+    display: block; /* Hacer que el enlace ocupe toda la línea */
+    text-overflow: ellipsis; /* Mostrar "..." si el texto se corta */
+    white-space: normal; /* Permitir que el texto se divida en varias líneas si es necesario */
+    font-size: 14px; /* Ajustar el tamaño de fuente si es necesario */
+    line-height: 1.4; /* Mejorar la legibilidad */
+    word-break: break-word; /* Forzar la ruptura de palabras largas */
+}
+
+/* Contacto */
+.contact-section {
+    margin-top: 20px;
+}
+
+.contact-section p {
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 16px;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #27ae60;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #1e8449;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    background: #27ae60;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    text-decoration: none;
+}

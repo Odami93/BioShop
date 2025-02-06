@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiendas - BioShop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="container">
+            <h1>BioShop</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="tiendas.html" class="active">Tiendas</a></li>
+                    <li><a href="informacion.html">Información</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Tiendas -->
+    <section class="store-list">
+        <div class="container">
+            <h2>Tiendas Orgánicas</h2>
+            <div class="store-grid">
+        <!-- Tienda Naturonium -->
+            <div class="store-item">
+                <img src="Natorium.png" alt="Naturonium">
+                <h3>Naturonium</h3>
+                <p>Tienda con productos ecológicos. Ubicación: Av. de Levante, 232, 28521 Rivas-Vaciamadrid, Madrid.</p>
+                <button id="learnMoreButton1" class="details-link">Ver más detalles</button>
+                <div id="extraInfo1" class="store-details" style="display:none;">
+                <p><strong>Dirección:</strong> Av. de Levante, 232, 28521 Rivas-Vaciamadrid, Madrid</p>
+                <p><strong>Teléfono:</strong> 916702621</p>
+                <p><strong>Horario:</strong> 10:00–14:00, 17:30–20:00</p>
+                <p><strong>Website:</strong> <a href="http://naturonium.com/" target="_blank">naturonium.com</a></p>
+            </div>
+        </div>
+                <!-- Tienda 2 -->
+                <div class="store-item">
+                    <img src="https://via.placeholder.com/250" alt="Tienda 2">
+                    <h3>EcoLocal</h3>
+                    <p>Ofrece productos a granel y libres de plásticos. Ubicación: Barcelona, España.</p>
+                    <a href="#" class="details-link">Ver más detalles</a>
+                </div>
+                <!-- Tienda 3 -->
+                <div class="store-item">
+                    <img src="https://via.placeholder.com/250" alt="Tienda 3">
+                    <h3>NaturalMarket</h3>
+                    <p>Amplia selección de productos sostenibles y éticos. Ubicación: Valencia, España.</p>
+                    <a href="#" class="details-link">Ver más detalles</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2025 BioShop. Todos los derechos reservados. <a href="#">Política de Privacidad</a></p>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

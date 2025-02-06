@@ -1,0 +1,32 @@
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Dd]ist/
+bin/
+obj/
+
+# User-specific files
+.vscode/
+.idea/
+
+# ASP.NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# JetBrains Rider
+.idea/
+
+# Node.js
+node_modules/
+
+# ASP.NET Core Environment Variables
+appsettings.Development.json
+appsettings.Production.json
+appsettings.Staging.json

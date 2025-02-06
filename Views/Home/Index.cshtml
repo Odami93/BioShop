@@ -1,0 +1,77 @@
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioShop - Consumo Responsable</title>
+    <link rel="stylesheet" href="~/css/styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="container">
+            <h1>BioShop</h1>
+            <nav>
+                <ul>
+                    <li><a href="@Url.Action("Index", "Home")">Inicio</a></li>
+                    <li><a href="@Url.Action("Productos", "Productos")">Productos</a></li>
+                    <li><a href="@Url.Action("Tiendas", "Tiendas")">Tiendas</a></li>
+                    <li><a href="@Url.Action("Informacion", "Informacion")">Información</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Buscador -->
+    <section class="search">
+        <div class="container">
+            <h2>Encuentra productos responsables</h2>
+            <form onsubmit="event.preventDefault(); buscarProductos();">
+                <input type="text" id="inputBusqueda" placeholder="Buscar productos o tiendas...">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Productos Destacados -->
+    <section class="featured-products">
+        <div class="container">
+            <h2>Productos Destacados</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="~/images/tofu.webp" alt="Tofu Orgánico">
+                    <h3>Tofu Orgánico</h3>
+                    <p>Delicioso tofu orgánico para todas tus recetas.</p>
+                </div>
+                <div class="product-item">
+                    <img src="~/images/arroz.jpeg" alt="Arroz Integral Bio">
+                    <h3>Arroz Integral Bio</h3>
+                    <p>Arroz integral orgánico, perfecto para tu salud.</p>
+                </div>
+                <div class="product-item">
+                    <img src="~/images/aceite.jpeg" alt="Aceite de Oliva Virgen Extra">
+                    <h3>Aceite de Oliva Virgen Extra</h3>
+                    <p>Aceite de oliva 100% virgen extra, producido de manera responsable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botón para volver arriba -->
+    <button id="volverArriba" style="display:none; position:fixed; bottom:20px; right:20px; padding:10px 15px; background-color:#27ae60; color:#fff; border:none; border-radius:5px; cursor:pointer;">
+        ↑ Volver arriba
+    </button>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2025 BioShop. Todos los derechos reservados. <a href="#">Política de Privacidad</a></p>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="~/js/script.js"></script>
+</body>
+</html>

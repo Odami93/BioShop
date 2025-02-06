@@ -1,0 +1,57 @@
+@model IEnumerable<BioShopDB.Models.Producto>
+
+
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - BioShop</title>
+    <link rel="stylesheet" href="~/css/styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="container">
+            <h1>BioShop</h1>
+            <nav>
+                <ul>
+                    <li><a href="@Url.Action("Index", "Home")">Inicio</a></li>
+                    <li><a href="@Url.Action("Productos", "Productos")" class="active">Productos</a></li>
+                    <li><a href="@Url.Action("Tiendas", "Tiendas")">Tiendas</a></li>
+                    <li><a href="@Url.Action("Informacion", "Informacion")">Información</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Productos -->
+    <section class="product-list">
+        <div class="container">
+            <h2>Productos Orgánicos</h2>
+            <div class="product-grid">
+                @foreach (var producto in Model) 
+                {
+                    <div class="product-item">
+                        <h3>@producto.Nombre</h3>
+                        <p>@producto.Descripcion</p>
+                        <img src="@producto.ImagenUrl" alt="@producto.Nombre" class="product-image" />
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2025 BioShop. Todos los derechos reservados. <a href="#">Política de Privacidad</a></p>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="~/js/script.js"></script>
+</body>
+</html>

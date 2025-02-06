@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioShop - Consumo Responsable</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="container">
+            <h1>BioShop</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="/BioShopDB/wwwroot/productos.html">Productos</a></li>
+                    <li><a href="/BioShopDB/wwwroot/tiendas.html">Tiendas</a></li>
+                    <li><a href="/BioShopDB/wwwroot/informacion.html">Información</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Buscador -->
+    <section class="search">
+        <div class="container">
+            <h2>Encuentra productos responsables</h2>
+            <form onsubmit="event.preventDefault(); buscarProductos();">
+                <input type="text" id="inputBusqueda" placeholder="Buscar productos o tiendas...">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Productos Destacados -->
+    <section class="featured-products">
+        <div class="container">
+            <h2>Productos Destacados</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/250" alt="Producto 1">
+                    <h3>Producto Orgánico 1</h3>
+                    <p>Descripción breve del producto.</p>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/250" alt="Producto 2">
+                    <h3>Producto Orgánico 2</h3>
+                    <p>Descripción breve del producto.</p>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/250" alt="Producto 3">
+                    <h3>Producto Orgánico 3</h3>
+                    <p>Descripción breve del producto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botón para volver arriba -->
+    <button id="volverArriba" style="display:none; position:fixed; bottom:20px; right:20px; padding:10px 15px; background-color:#27ae60; color:#fff; border:none; border-radius:5px; cursor:pointer;">
+        ↑ Volver arriba
+    </button>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2025 BioShop. Todos los derechos reservados. <a href="#">Política de Privacidad</a></p>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

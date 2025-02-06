@@ -1,0 +1,55 @@
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información - BioShop</title>
+    <link rel="stylesheet" href="~/css/styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="container">
+            <h1>BioShop</h1>
+            <nav>
+                <ul>
+                    <li><a href="@Url.Action("Index", "Home")">Inicio</a></li>
+                    <li><a href="@Url.Action("Productos", "Productos")">Productos</a></li>
+                    <li><a href="@Url.Action("Tiendas", "Tiendas")">Tiendas</a></li>
+                    <li><a href="@Url.Action("Informacion", "Informacion")" class="active">Información</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección de Información -->
+    <section class="info-section">
+        <div class="container">
+            <h2>Información sobre BioShop</h2>
+            <p>En esta sección te contamos más sobre cómo BioShop fomenta el consumo responsable, cómo funciona la plataforma y los beneficios de consumir productos sostenibles.</p>
+
+            <h3>Misión de BioShop</h3>
+            <p>BioShop es una plataforma que busca promover productos sostenibles y responsables, conectando a los usuarios con tiendas que priorizan el bienestar del medio ambiente.</p>
+
+            <h3>Beneficios del Consumo Responsable</h3>
+            <p>El consumo responsable no solo protege el medio ambiente, sino que también contribuye a la salud y bienestar de las personas, ofreciendo productos orgánicos, locales y de comercio justo.</p>
+
+            <h3>¿Cómo Funciona BioShop?</h3>
+            <p>BioShop ofrece a los usuarios una forma fácil de encontrar productos sostenibles y tiendas responsables, ayudando a reducir el impacto ambiental en nuestras compras diarias.</p>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2025 BioShop. Todos los derechos reservados. <a href="#">Política de Privacidad</a></p>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="~/js/script.js"></script>
+</body>
+</html>
+

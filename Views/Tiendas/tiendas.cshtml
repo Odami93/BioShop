@@ -1,0 +1,61 @@
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiendas - BioShop</title>
+    <link rel="stylesheet" href="~/css/styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="container">
+            <h1>BioShop</h1>
+            <nav>
+                <ul>
+                    <li><a href="@Url.Action("Index", "Home")">Inicio</a></li>
+                    <li><a href="@Url.Action("Productos", "Productos")">Productos</a></li>
+                    <li><a href="@Url.Action("Tiendas", "Tiendas")" class="active">Tiendas</a></li>
+                    <li><a href="@Url.Action("Informacion", "Informacion")">Información</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Tiendas -->
+    <section class="store-list">
+        <div class="container">
+            <h2>Tiendas Orgánicas</h2>
+            <div class="store-grid">
+                @foreach (var tienda in Model)
+                {
+                    <div class="store-item">
+                        <h3>@tienda.Nombre</h3>
+                        <div class="store-details">
+                            <p><strong>Dirección:</strong> @tienda.Direccion</p>
+                            <p><strong>Teléfono:</strong> @tienda.Telefono</p>
+                            <p><strong>Horario:</strong> @tienda.Horario</p>
+                            @if (!string.IsNullOrEmpty(tienda.Web))
+                            {
+                                <p><strong>Web:</strong> <a href="@tienda.Web" target="_blank">@tienda.Web</a></p>
+                            }
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2025 BioShop. Todos los derechos reservados. <a href="#">Política de Privacidad</a></p>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="~/js/script.js"></script>
+</body>
+</html>
